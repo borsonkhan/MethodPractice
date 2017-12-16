@@ -20,6 +20,7 @@ public class MethodPractice {
 	public static String getText(String name) {
 		String text = " ";
 		
+		text = name;
 		
 		return text;
 	}
