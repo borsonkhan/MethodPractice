@@ -4,7 +4,8 @@ public class MethodPractice {
 
 	public static void main (String [] args) {
 		
-		System.out.print("Q1 = " + getText("khan"));
+		System.out.println("Q1 = " + getText("khan"));
+		System.out.println("Q2 = " + getSubject("khan"));
 		
 	}
 	
@@ -25,7 +26,19 @@ public class MethodPractice {
 		return text;
 	}
 	
+	/*
+	 * Q2;
+	 * input = String name;
+	 * return = String ;
+	 * serving bucket = variable;
+	 */
 	
+	public static String getSubject(String name) {
+		String subject = " ";
+		
+		
+		return subject;
+	}
 	
 	
 	
