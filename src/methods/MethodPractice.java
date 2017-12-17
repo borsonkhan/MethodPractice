@@ -8,8 +8,10 @@ public class MethodPractice {
 
 		System.out.println("Q1 = " + getText("khan"));
 		System.out.println("Q2 = " + getSubject("Khan"));
-		System.out.println("Q2 = " + getUpperText("Khan"));
+		System.out.println("Q3 = " + getUpperText("Khan"));
 		System.out.println("Q4 = " + getEvenNumber(20));
+		System.out.println("Q5 = " + getOddNumber(20));
+
 
 	}
 
@@ -67,4 +69,21 @@ public class MethodPractice {
 		return evenNumber;
 	}
 
+	/*
+	 * Q5; input = int number; return type = ArrayList<Integer>; serving bucket =
+	 * list;
+	 */
+	public static ArrayList<Integer> getOddNumber(int number){
+	ArrayList<Integer> oddNumber = new ArrayList<Integer>();
+	
+	for(int i=0; i<=19;i++) {
+		
+		if (i%2 == 1) {
+			
+			oddNumber.add(i);
+		}
+	}
+	
+	return oddNumber;
+}
 }
