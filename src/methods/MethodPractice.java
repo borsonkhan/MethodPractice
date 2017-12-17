@@ -12,6 +12,7 @@ public class MethodPractice {
 		System.out.println("Q4 = " + getEvenNumber(20));
 		System.out.println("Q5 = " + getOddNumber(20));
 		System.out.println("Q6 = " + getKilometer(5));
+		System.out.println("Q7 = " + getIndex("borson"));
 
 
 	}
@@ -98,6 +99,21 @@ public class MethodPractice {
 		kilometer = number*106;
 		
 		return kilometer;
+	}
+	/**
+	 * Q7;
+	 * input = String input ;
+	 * return type = ArrayList<Integer>;
+	 * serving bucket = list;
+	 */
+	public static ArrayList<Integer> getIndex(String name){
+		ArrayList<Integer> index = new ArrayList<Integer>();
+		for ( int i=0; i<name.length(); i++) {
+
+			index.add(i);
+		}
+		
+		return index;
 	}
 	
 	
