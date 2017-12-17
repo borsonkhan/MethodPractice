@@ -14,6 +14,7 @@ public class MethodPractice {
 		System.out.println("Q6 = " + getKilometer(5));
 		System.out.println("Q7 = " + getIndex("borson"));
 		System.out.println("Q8 = " + getcharList("borson"));
+		System.out.println("Q9 = " + getSum(10));
 
 
 	}
@@ -133,7 +134,21 @@ public class MethodPractice {
 		
 		return charList;
 	}
-	
+	/*
+	 * Q9;
+	 * input = int number;
+	 * return type = int ;
+	 * serving bucket = variable;
+	 */
+	public static int getSum(int number) {
+		int sum = 0;
+		
+		for(int i=1; i<=number; i++) {
+			sum = sum+i;
+		}
+		
+		return sum;
+	}
 	
 	
 	
