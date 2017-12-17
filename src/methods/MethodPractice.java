@@ -15,6 +15,8 @@ public class MethodPractice {
 		System.out.println("Q7 = " + getIndex("borson"));
 		System.out.println("Q8 = " + getcharList("borson"));
 		System.out.println("Q9 = " + getSum(10));
+		System.out.println("Q10 = " + getSquare(10));
+
 
 
 	}
@@ -150,7 +152,19 @@ public class MethodPractice {
 		return sum;
 	}
 	
-	
+	/*
+	 * Q10;
+	 * input = int number;
+	 * return type = int;
+	 * serving bucket = variable;
+	 */
+	public static int getSquare(int number) {
+		int square = 0;
+		
+		square = number*number;
+		
+		return square;
+	}
 	
 	
 	
