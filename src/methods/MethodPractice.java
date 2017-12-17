@@ -13,6 +13,7 @@ public class MethodPractice {
 		System.out.println("Q5 = " + getOddNumber(20));
 		System.out.println("Q6 = " + getKilometer(5));
 		System.out.println("Q7 = " + getIndex("borson"));
+		System.out.println("Q8 = " + getcharList("borson"));
 
 
 	}
@@ -116,7 +117,22 @@ public class MethodPractice {
 		return index;
 	}
 	
-	
+	/*
+	 * Q8;
+	 * input = String name;
+	 * return type = ArrayList<Character>;
+	 * serving bucket = list;
+	 */
+	public static ArrayList<Character> getcharList(String name){
+		ArrayList<Character> charList = new ArrayList<Character>();
+		
+		for (int i=0; i<name.length(); i++) {
+			
+			charList.add(name.charAt(i));
+		}
+		
+		return charList;
+	}
 	
 	
 	
