@@ -11,6 +11,7 @@ public class MethodPractice {
 		System.out.println("Q3 = " + getUpperText("Khan"));
 		System.out.println("Q4 = " + getEvenNumber(20));
 		System.out.println("Q5 = " + getOddNumber(20));
+		System.out.println("Q6 = " + getKilometer(5));
 
 
 	}
@@ -86,4 +87,44 @@ public class MethodPractice {
 	
 	return oddNumber;
 }
+	/*
+	 * Q6;
+	 * input = int number;
+	 * return = int;
+	 * serving = variable;
+	 */
+	public static int getKilometer(int number) {
+		int kilometer = 0;
+		kilometer = number*106;
+		
+		return kilometer;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
