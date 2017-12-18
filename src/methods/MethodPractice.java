@@ -21,6 +21,12 @@ public class MethodPractice {
 		System.out.println("Q12 = " + Arrays.toString(getOddList(10)));
 		System.out.println("Q13 = " + getTextList(18));
 		System.out.println("Q14 = " + getComments(15));
+		
+		int[] numberlist = { 2, 4, 8, 90 };
+		System.out.println("Q15 = " + getMinimumNum(numberlist));
+
+		int[] numlist = { 2, 4, 8, 90 };
+		System.out.println("Q16 = " + getMaximumNumber(numlist));
 
 	}
 
@@ -190,7 +196,8 @@ public class MethodPractice {
 
 	/*
 	 * Q13 = write a method that take one number input and return number list 0 to
-	 * given number; input = int number; return type = ArrayList<Integer>; serving
+	 * given number; 
+	 * input = int number; return type = ArrayList<Integer>; serving
 	 * bucket = list;
 	 */
 	public static ArrayList<Integer> getTextList(int number) {
@@ -208,26 +215,79 @@ public class MethodPractice {
 	 * the given number divided by 5 and return "buzz" if the given number divided
 	 * by 5&&3 otherwise return "fizzbuzz";
 	 * 
-	 * input = int number;
-	 * return type = String;
-	 * serving bucket = variable;
+	 * input = int number; return type = String; serving bucket = variable;
 	 */
 
 	public static String getComments(int number) {
 		String comments = null;
-		
-		if (number%5==0 && number%3 ==0 ) {
-			
-			comments= "buzz";
-		}else  if(number%5==0) {
-			
-			comments="fuzz";
-		}else {
-			comments="fizzbuzz";
+
+		if (number % 5 == 0 && number % 3 == 0) {
+
+			comments = "buzz";
+		} else if (number % 5 == 0) {
+
+			comments = "fuzz";
+		} else {
+			comments = "fizzbuzz";
 		}
-		
-		
-		
+
 		return comments;
 	}
+
+	/*
+	 * Q15 = write a method that take one number array input and return the minimum
+	 * number ; 
+	 * input = int[] numberlist; return type = int; serving bucket =
+	 * variable;
+	 */
+	public static int getMinimumNum(int[] numberlist) {
+		int minimumNum = numberlist[0];
+
+		for (int i = 0; i < numberlist.length; i++) {
+
+			if (minimumNum > numberlist[i]) {
+
+				minimumNum = numberlist[i];
+			}
+		}
+
+		return minimumNum;
+	}
+
+	/*
+	 * Q16 = write a method that take one number array and return the maximum number;
+	 * input = int[] numlist;
+	 * return type = int;
+	 * serving bucket = variable;
+	 */
+	public static int getMaximumNumber(int [] numlist) {
+		int maximumNumber = numlist[0];
+		
+		for (int i=0; i<numlist.length;i++) {
+			
+		
+		if (maximumNumber < numlist[i]) {
+			maximumNumber = numlist[i];
+			
+		}}
+		
+		return maximumNumber;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
