@@ -19,6 +19,8 @@ public class MethodPractice {
 		System.out.println("Q10 = " + getSquare(10));
 		System.out.println("Q11 = " + Arrays.toString(getEvenList(10)));
 		System.out.println("Q12 = " + Arrays.toString(getOddList(10)));
+		System.out.println("Q13 = " + getTextList(18));
+		System.out.println("Q14 = " + getComments(15));
 
 	}
 
@@ -176,14 +178,56 @@ public class MethodPractice {
 	 * Q12; input = int number; return type = int []; serving bucket = Array;
 	 */
 	public static int[] getOddList(int number) {
-		int[] oddList = new int[number+1];
+		int[] oddList = new int[number];
 
-		for (int i = 1; i <=number; i++) {
+		for (int i = 1; i <= number; i++) {
 
-			oddList[i-1]=i;
+			oddList[i - 1] = i;
 		}
 
 		return oddList;
 	}
 
+	/*
+	 * Q13 = write a method that take one number input and return number list 0 to
+	 * given number; input = int number; return type = ArrayList<Integer>; serving
+	 * bucket = list;
+	 */
+	public static ArrayList<Integer> getTextList(int number) {
+		ArrayList<Integer> textList = new ArrayList<Integer>();
+
+		for (int i = 0; i <= number; i++) {
+
+			textList.add(i);
+		}
+
+		return textList;
+	}
+	/*
+	 * Q14 = write a method that take one number input and return a number "fizz" if
+	 * the given number divided by 5 and return "buzz" if the given number divided
+	 * by 5&&3 otherwise return "fizzbuzz";
+	 * 
+	 * input = int number;
+	 * return type = String;
+	 * serving bucket = variable;
+	 */
+
+	public static String getComments(int number) {
+		String comments = null;
+		
+		if (number%5==0 && number%3 ==0 ) {
+			
+			comments= "buzz";
+		}else  if(number%5==0) {
+			
+			comments="fuzz";
+		}else {
+			comments="fizzbuzz";
+		}
+		
+		
+		
+		return comments;
+	}
 }
