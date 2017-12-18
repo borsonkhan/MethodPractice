@@ -18,9 +18,7 @@ public class MethodPractice {
 		System.out.println("Q9 = " + getSum(10));
 		System.out.println("Q10 = " + getSquare(10));
 		System.out.println("Q11 = " + Arrays.toString(getEvenList(10)));
-		
-
-
+		System.out.println("Q12 = " + Arrays.toString(getOddList(10)));
 
 	}
 
@@ -82,129 +80,110 @@ public class MethodPractice {
 	 * Q5; input = int number; return type = ArrayList<Integer>; serving bucket =
 	 * list;
 	 */
-	public static ArrayList<Integer> getOddNumber(int number){
-	ArrayList<Integer> oddNumber = new ArrayList<Integer>();
-	
-	for(int i=0; i<=19;i++) {
-		
-		if (i%2 == 1) {
-			
-			oddNumber.add(i);
+	public static ArrayList<Integer> getOddNumber(int number) {
+		ArrayList<Integer> oddNumber = new ArrayList<Integer>();
+
+		for (int i = 0; i <= 19; i++) {
+
+			if (i % 2 == 1) {
+
+				oddNumber.add(i);
+			}
 		}
+
+		return oddNumber;
 	}
-	
-	return oddNumber;
-}
+
 	/*
-	 * Q6;
-	 * input = int number;
-	 * return = int;
-	 * serving = variable;
+	 * Q6; input = int number; return = int; serving = variable;
 	 */
 	public static int getKilometer(int number) {
 		int kilometer = 0;
-		kilometer = number*106;
-		
+		kilometer = number * 106;
+
 		return kilometer;
 	}
+
 	/**
-	 * Q7;
-	 * input = String input ;
-	 * return type = ArrayList<Integer>;
-	 * serving bucket = list;
+	 * Q7; input = String input ; return type = ArrayList<Integer>; serving bucket =
+	 * list;
 	 */
-	public static ArrayList<Integer> getIndex(String name){
+	public static ArrayList<Integer> getIndex(String name) {
 		ArrayList<Integer> index = new ArrayList<Integer>();
-		for ( int i=0; i<name.length(); i++) {
+		for (int i = 0; i < name.length(); i++) {
 
 			index.add(i);
 		}
-		
+
 		return index;
 	}
-	
+
 	/*
-	 * Q8;
-	 * input = String name;
-	 * return type = ArrayList<Character>;
-	 * serving bucket = list;
+	 * Q8; input = String name; return type = ArrayList<Character>; serving bucket =
+	 * list;
 	 */
-	public static ArrayList<Character> getcharList(String name){
+	public static ArrayList<Character> getcharList(String name) {
 		ArrayList<Character> charList = new ArrayList<Character>();
-		
-		for (int i=0; i<name.length(); i++) {
-			
+
+		for (int i = 0; i < name.length(); i++) {
+
 			charList.add(name.charAt(i));
 		}
-		
+
 		return charList;
 	}
+
 	/*
-	 * Q9;
-	 * input = int number;
-	 * return type = int ;
-	 * serving bucket = variable;
+	 * Q9; input = int number; return type = int ; serving bucket = variable;
 	 */
 	public static int getSum(int number) {
 		int sum = 0;
-		
-		for(int i=1; i<=number; i++) {
-			sum = sum+i;
+
+		for (int i = 1; i <= number; i++) {
+			sum = sum + i;
 		}
-		
+
 		return sum;
 	}
-	
+
 	/*
-	 * Q10;
-	 * input = int number;
-	 * return type = int;
-	 * serving bucket = variable;
+	 * Q10; input = int number; return type = int; serving bucket = variable;
 	 */
 	public static int getSquare(int number) {
 		int square = 0;
-		
-		square = number*number;
-		
+
+		square = number * number;
+
 		return square;
 	}
+
 	/*
-	 * Q11;
-	 * input = int number;
-	 * return type = int[] ;
-	 * serving bucket = Array;
+	 * Q11; input = int number; return type = int[] ; serving bucket = Array;
 	 */
 	public static int[] getEvenList(int number) {
-		int [] evenList = new int[number+1];
-		
-		for(int i=0; i<=number;i++) {
-			
-			evenList[i]=i;
-			
+		int[] evenList = new int[number + 1];
+
+		for (int i = 0; i <= number; i++) {
+
+			evenList[i] = i;
+
 		}
-		
+
 		return evenList;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+	/*
+	 * Q12; input = int number; return type = int []; serving bucket = Array;
+	 */
+	public static int[] getOddList(int number) {
+		int[] oddList = new int[number+1];
+
+		for (int i = 1; i <=number; i++) {
+
+			oddList[i-1]=i;
+		}
+
+		return oddList;
+	}
+
 }
