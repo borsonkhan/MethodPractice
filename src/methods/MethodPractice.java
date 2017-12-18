@@ -1,6 +1,7 @@
 package methods;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class MethodPractice {
 
@@ -16,6 +17,8 @@ public class MethodPractice {
 		System.out.println("Q8 = " + getcharList("borson"));
 		System.out.println("Q9 = " + getSum(10));
 		System.out.println("Q10 = " + getSquare(10));
+		System.out.println("Q11 = " + Arrays.toString(getEvenList(10)));
+		
 
 
 
@@ -165,7 +168,23 @@ public class MethodPractice {
 		
 		return square;
 	}
-	
+	/*
+	 * Q11;
+	 * input = int number;
+	 * return type = int[] ;
+	 * serving bucket = Array;
+	 */
+	public static int[] getEvenList(int number) {
+		int [] evenList = new int[number+1];
+		
+		for(int i=0; i<=number;i++) {
+			
+			evenList[i]=i;
+			
+		}
+		
+		return evenList;
+	}
 	
 	
 	
