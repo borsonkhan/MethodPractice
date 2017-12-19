@@ -29,6 +29,9 @@ public class MethodPractice {
 		System.out.println("Q16 = " + getMaximumNumber(numlist));
 		System.out.println("Q17 = " + getValue(10));
 		System.out.println("Q18 = " + getValueOfInt("20") );
+		System.out.println("Q19 = " + getCharacter("borsonkhan"));
+		System.out.println("Q20 = " + getSumOfIndex("borsonkhan"));
+
 
 	}
 
@@ -301,7 +304,45 @@ public class MethodPractice {
 		return value;
 	}
 /*
- * Q19 = 
- * 
+ * Q19 = write a method take string input and return true if it contain char 'o' otherwise false;
+ * input = String name;
+ * return type = boolean;
+ * serving bucket = variable;
  */
+	public static boolean getCharacter(String name) {
+		boolean character = true;
+		
+		character = name.contains("o");
+		
+		return character;
+	}
+	/*
+	 * Q20 = write a method that take one string input and return the sum of all index;
+	 * input = String name;
+	 * return type = int;
+	 * serving bucket = variable;
+	 */
+	public static int getSumOfIndex(String name) {
+		int sum = 0;
+		
+		for (int i = 0; i<name.length();i++) {
+			
+			sum = sum+i;
+		}
+		
+		return sum;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
