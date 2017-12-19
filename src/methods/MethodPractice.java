@@ -28,14 +28,14 @@ public class MethodPractice {
 		int[] numlist = { 2, 4, 8, 90 };
 		System.out.println("Q16 = " + getMaximumNumber(numlist));
 		System.out.println("Q17 = " + getValue(10));
-		System.out.println("Q18 = " + getValueOfInt("20") );
+		System.out.println("Q18 = " + getValueOfInt("20"));
 		System.out.println("Q19 = " + getCharacter("borsonkhan"));
 		System.out.println("Q20 = " + getSumOfIndex("borsonkhan"));
 		System.out.println("Q21 = " + getLastFiveWord("Borsonkhan"));
 		System.out.println("Q22 = " + getFirstFiveWord("Borsonkhanok"));
 		System.out.println("Q23 = " + getFiveToTenChar("Borsonkhan"));
-
-
+		System.out.println("Q24 = " + getAllWord("my name is Khan"));
+		System.out.println("Q25 = " + getFirstWord("my name is Khan"));
 
 	}
 
@@ -278,17 +278,16 @@ public class MethodPractice {
 
 		return maximumNumber;
 	}
+
 	/*
-	 * Q17 = write a method that take a number input and return the same value as string;
-	 * input = int number;
-	 * return type = String;
-	 * serving bucket = variable;
+	 * Q17 = write a method that take a number input and return the same value as
+	 * string; input = int number; return type = String; serving bucket = variable;
 	 */
 	public static String getValue(int number) {
 		String value = " ";
-		
+
 		String massage = String.valueOf(number);
-		
+
 		value = massage;
 		return value;
 	}
@@ -307,90 +306,114 @@ public class MethodPractice {
 
 		return value;
 	}
-/*
- * Q19 = write a method take string input and return true if it contain char 'o' otherwise false;
- * input = String name;
- * return type = boolean;
- * serving bucket = variable;
- */
+
+	/*
+	 * Q19 = write a method take string input and return true if it contain char 'o'
+	 * otherwise false; input = String name; return type = boolean; serving bucket =
+	 * variable;
+	 */
 	public static boolean getCharacter(String name) {
 		boolean character = true;
-		
+
 		character = name.contains("o");
-		
+
 		return character;
 	}
+
 	/*
-	 * Q20 = write a method that take one string input and return the sum of all index;
-	 * input = String name;
-	 * return type = int;
-	 * serving bucket = variable;
+	 * Q20 = write a method that take one string input and return the sum of all
+	 * index; input = String name; return type = int; serving bucket = variable;
 	 */
 	public static int getSumOfIndex(String name) {
 		int sum = 0;
-		
-		for (int i = 0; i<name.length();i++) {
-			
-			sum = sum+i;
+
+		for (int i = 0; i < name.length(); i++) {
+
+			sum = sum + i;
 		}
-		
+
 		return sum;
 	}
+
 	/*
-	 * Q21 = write a method that take one string and return a list of last five character;
-	 * input = String name;
-	 * return type = ArrayList<Character>;
-	 * serving bucket = list;
+	 * Q21 = write a method that take one string and return a list of last five
+	 * character; input = String name; return type = ArrayList<Character>; serving
+	 * bucket = list;
 	 */
-	public static ArrayList<Character> getLastFiveWord(String name){
+	public static ArrayList<Character> getLastFiveWord(String name) {
 		ArrayList<Character> lastFiveWord = new ArrayList<Character>();
-		
-		for (int i = name.length()-5; i<name.length();i++) {
-			
+
+		for (int i = name.length() - 5; i < name.length(); i++) {
+
 			lastFiveWord.add(name.charAt(i));
 		}
-		
-		
+
 		return lastFiveWord;
 	}
+
 	/*
-	 * Q22 = write a method that take one string and return a list of first five character;
-	 * input = String name;
-	 * return type = ArrayList<Character>;
-	 * serving bucket = list;
+	 * Q22 = write a method that take one string and return a list of first five
+	 * character; input = String name; return type = ArrayList<Character>; serving
+	 * bucket = list;
 	 */
-	public static ArrayList<Character> getFirstFiveWord(String name){
-		
-		ArrayList<Character> firstFiveWord = new ArrayList<Character> ();
-		
-		for (int i= 0; i<5;i++) {
-			
+	public static ArrayList<Character> getFirstFiveWord(String name) {
+
+		ArrayList<Character> firstFiveWord = new ArrayList<Character>();
+
+		for (int i = 0; i < 5; i++) {
+
 			firstFiveWord.add(name.charAt(i));
 		}
-		
+
 		return firstFiveWord;
 	}
+
 	/*
-	 * Q23 = write a method that take a string input and return  5 to 10 character as a string;
-	 * input = String name;
-	 * return type = String;
-	 * serving bucket = variable;
+	 * Q23 = write a method that take a string input and return 5 to 10 character as
+	 * a string; input = String name; return type = String; serving bucket =
+	 * variable;
 	 */
 	public static String getFiveToTenChar(String name) {
 		String fiveToTenChar = " ";
-		
+
 		fiveToTenChar = name.substring(4, 10);
-		
+
 		return fiveToTenChar;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+	/*
+	 * Q24 = write a method that take one String input and return all word; input =
+	 * String name; return type = ArrayList<string> ; serving bucket = list;
+	 */
+	public static ArrayList<String> getAllWord(String name) {
+		ArrayList<String> allWord = new ArrayList<String>();
+
+		String[] wordArray = name.split(" ");
+
+		for (int i = 0; i < wordArray.length; i++) {
+
+			allWord.add(wordArray[i]);
+
+		}
+
+		return allWord;
+	}
+
+	/*
+	 * Q25 = write a method take one string input and return first word; input = one
+	 * String name; return type = String; serving bucket = variable;
+	 */
+	public static String getFirstWord(String name) {
+		String firstWord = " ";
+
+		String[] wordArray = name.split(" ");
+
+		for (int i = 0; i < wordArray.length; i++) {
+
+			firstWord = wordArray[0];
+		}
+
+		return firstWord;
+	}
+
 }
