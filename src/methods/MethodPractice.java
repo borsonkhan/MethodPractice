@@ -31,6 +31,8 @@ public class MethodPractice {
 		System.out.println("Q18 = " + getValueOfInt("20") );
 		System.out.println("Q19 = " + getCharacter("borsonkhan"));
 		System.out.println("Q20 = " + getSumOfIndex("borsonkhan"));
+		System.out.println("Q21 = " + getLastFiveWord("Borsonkhan"));
+		System.out.println("Q22 = " + getFirstFiveWord("Borsonkhanok"));
 
 
 	}
@@ -331,6 +333,40 @@ public class MethodPractice {
 		}
 		
 		return sum;
+	}
+	/*
+	 * Q21 = write a method that take one string and return a list of last five character;
+	 * input = String name;
+	 * return type = ArrayList<Character>;
+	 * serving bucket = list;
+	 */
+	public static ArrayList<Character> getLastFiveWord(String name){
+		ArrayList<Character> lastFiveWord = new ArrayList<Character>();
+		
+		for (int i = name.length()-5; i<name.length();i++) {
+			
+			lastFiveWord.add(name.charAt(i));
+		}
+		
+		
+		return lastFiveWord;
+	}
+	/*
+	 * Q22 = write a method that take one string and return a list of first five character;
+	 * input = String name;
+	 * return type = ArrayList<Character>;
+	 * serving bucket = list;
+	 */
+	public static ArrayList<Character> getFirstFiveWord(String name){
+		
+		ArrayList<Character> firstFiveWord = new ArrayList<Character> ();
+		
+		for (int i= 0; i<5;i++) {
+			
+			firstFiveWord.add(name.charAt(i));
+		}
+		
+		return firstFiveWord;
 	}
 	
 	
