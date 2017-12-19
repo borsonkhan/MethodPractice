@@ -33,6 +33,8 @@ public class MethodPractice {
 		System.out.println("Q20 = " + getSumOfIndex("borsonkhan"));
 		System.out.println("Q21 = " + getLastFiveWord("Borsonkhan"));
 		System.out.println("Q22 = " + getFirstFiveWord("Borsonkhanok"));
+		System.out.println("Q23 = " + getFiveToTenChar("Borsonkhan"));
+
 
 
 	}
@@ -368,9 +370,19 @@ public class MethodPractice {
 		
 		return firstFiveWord;
 	}
-	
-	
-	
+	/*
+	 * Q23 = write a method that take a string input and return  5 to 10 character as a string;
+	 * input = String name;
+	 * return type = String;
+	 * serving bucket = variable;
+	 */
+	public static String getFiveToTenChar(String name) {
+		String fiveToTenChar = " ";
+		
+		fiveToTenChar = name.substring(4, 10);
+		
+		return fiveToTenChar;
+	}
 	
 	
 	
