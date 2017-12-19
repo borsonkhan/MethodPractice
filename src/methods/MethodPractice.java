@@ -21,12 +21,14 @@ public class MethodPractice {
 		System.out.println("Q12 = " + Arrays.toString(getOddList(10)));
 		System.out.println("Q13 = " + getTextList(18));
 		System.out.println("Q14 = " + getComments(15));
-		
+
 		int[] numberlist = { 2, 4, 8, 90 };
 		System.out.println("Q15 = " + getMinimumNum(numberlist));
 
 		int[] numlist = { 2, 4, 8, 90 };
 		System.out.println("Q16 = " + getMaximumNumber(numlist));
+		System.out.println("Q17 = " + getValue(10));
+		System.out.println("Q18 = " + getValueOfInt("20") );
 
 	}
 
@@ -196,8 +198,7 @@ public class MethodPractice {
 
 	/*
 	 * Q13 = write a method that take one number input and return number list 0 to
-	 * given number; 
-	 * input = int number; return type = ArrayList<Integer>; serving
+	 * given number; input = int number; return type = ArrayList<Integer>; serving
 	 * bucket = list;
 	 */
 	public static ArrayList<Integer> getTextList(int number) {
@@ -236,8 +237,7 @@ public class MethodPractice {
 
 	/*
 	 * Q15 = write a method that take one number array input and return the minimum
-	 * number ; 
-	 * input = int[] numberlist; return type = int; serving bucket =
+	 * number ; input = int[] numberlist; return type = int; serving bucket =
 	 * variable;
 	 */
 	public static int getMinimumNum(int[] numberlist) {
@@ -255,39 +255,53 @@ public class MethodPractice {
 	}
 
 	/*
-	 * Q16 = write a method that take one number array and return the maximum number;
-	 * input = int[] numlist;
-	 * return type = int;
-	 * serving bucket = variable;
+	 * Q16 = write a method that take one number array and return the maximum
+	 * number; input = int[] numlist; return type = int; serving bucket = variable;
 	 */
-	public static int getMaximumNumber(int [] numlist) {
+	public static int getMaximumNumber(int[] numlist) {
 		int maximumNumber = numlist[0];
-		
-		for (int i=0; i<numlist.length;i++) {
-			
-		
-		if (maximumNumber < numlist[i]) {
-			maximumNumber = numlist[i];
-			
-		}}
-		
+
+		for (int i = 0; i < numlist.length; i++) {
+
+			if (maximumNumber < numlist[i]) {
+				maximumNumber = numlist[i];
+
+			}
+		}
+
 		return maximumNumber;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	/*
+	 * Q17 = write a method that take a number input and return the same value as string;
+	 * input = int number;
+	 * return type = String;
+	 * serving bucket = variable;
+	 */
+	public static String getValue(int number) {
+		String value = " ";
+		
+		String massage = String.valueOf(number);
+		
+		value = massage;
+		return value;
+	}
+
+	/*
+	 * Q18 = write a method that take a string representation of number input and
+	 * return the same value as a int; input = String name; return type = int ;
+	 * serving bucket = variable;
+	 */
+	public static int getValueOfInt(String name) {
+		int value = 0;
+
+		int massage = Integer.valueOf(name);
+
+		value = massage;
+
+		return value;
+	}
+/*
+ * Q19 = 
+ * 
+ */
 }
