@@ -36,6 +36,11 @@ public class MethodPractice {
 		System.out.println("Q23 = " + getFiveToTenChar("Borsonkhan"));
 		System.out.println("Q24 = " + getAllWord("my name is Khan"));
 		System.out.println("Q25 = " + getFirstWord("my name is Khan"));
+		System.out.println("Q26 = " + getCount("borson Khan", "Khan"));
+		System.out.println("Q27 = " + getCountChar("I m  khan", 'i'));
+		System.out.println("Q28 = " + getBoolean("borson Khan", "khan"));
+		System.out.println("Q29 = " + getConsonent("borsonkhan"));
+		System.out.println("Q30 = " + getCountOfVowels("borsonkhana"));
 
 	}
 
@@ -416,4 +421,161 @@ public class MethodPractice {
 		return firstWord;
 	}
 
+	/*
+	 * Q25 = write a method take one string input and return first word; input = one
+	 * String name; return type = String; serving bucket = variable;
+	 */
+	public static String getFirsWord(String name) {
+		String firstWord = " ";
+
+		String[] wordArray = name.split(" ");
+
+		for (int i = 0; i < wordArray.length; i++) {
+
+			firstWord = wordArray[0];
+		}
+
+		return firstWord;
+	}
+
+	/*
+	 * Q26 = write a method take one string and one word input and return the count
+	 * of that gien word; input = String name , String word; return type = int ;
+	 * serving bucket = variable;
+	 */
+	public static int getCount(String name, String word) {
+		int count = 0;
+
+		String[] wordArray = name.split(" ");
+
+		for (int i = 0; i < wordArray.length; i++) {
+
+			if (wordArray[i].equalsIgnoreCase(word)) {
+				count = count + 1;
+			}
+		}
+
+		return count;
+	}
+
+	/*
+	 * Q27 = write a method that take one string and one character input and return
+	 * the count of given character; input = String name , char num; return type =
+	 * int ; serving bucket = variable;
+	 */
+	public static int getCountChar(String name, char num) {
+		int countChar = 0;
+
+		name = name.toLowerCase();
+
+		for (int i = 0; i < name.length(); i++) {
+
+			if (name.charAt(i) == num) {
+
+				countChar = countChar + 1;
+			}
+		}
+
+		return countChar;
+	}
+
+	/*
+	 * Q28 = write a method one string and one word input and return ture if that
+	 * sentence contain given word otherwise false; input = string name, String
+	 * word; return type = boolean; serving bucket = variable;
+	 */
+	public static boolean getBoolean(String name, String word) {
+		boolean subject = false;
+
+		name = name.toLowerCase();
+
+		String[] wordArray = name.split(" ");
+
+		for (int i = 0; i < wordArray.length; i++) {
+
+			if (wordArray[i].equalsIgnoreCase(word)) {
+
+				subject = true;
+
+			}
+		}
+
+		return subject;
+	}
+
+	/*
+	 * Q29 = write a method that take one string and return the count of all
+	 * consonant; input = string name; return type = int; serving bucket = variable;
+	 */
+	public static int getConsonent(String name) {
+		int consonent = 0;
+
+		String massage = "bcdfghjklmnpqrstvwxYZ";
+
+		massage = massage.toLowerCase();
+
+		for (int i = 0; i < name.length(); i++) {
+
+			String character = String.valueOf(name.charAt(i));
+
+			if (massage.contains(character)) {
+
+				consonent = consonent + 1;
+			}
+		}
+
+		return consonent;
+	}
+	/*
+	 * Q30 = write a method that take one String input and return the count of all vowels;
+	 * input = String name;
+	 * return type = int;
+	 * serving bucket = variable;
+	 */
+	public static int getCountOfVowels(String name) {
+		int vowels = 0 ;
+		
+		String vowel = "aeiou";
+		
+		name = name.toLowerCase();
+		
+		for (int i=0; i<name.length();i++) {
+			
+			String character = String.valueOf(name.charAt(i));
+			
+			if (vowel.contains(character)) {
+				
+				vowels = vowels+1;
+			}
+		}
+		
+		
+		return vowels;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
