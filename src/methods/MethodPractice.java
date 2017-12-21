@@ -41,6 +41,8 @@ public class MethodPractice {
 		System.out.println("Q28 = " + getBoolean("borson Khan", "khan"));
 		System.out.println("Q29 = " + getConsonent("borsonkhan"));
 		System.out.println("Q30 = " + getCountOfVowels("borsonkhana"));
+		System.out.println("Q31 = " + getCountOfChar("Borson Khan"));
+		System.out.println("Q32 = " + getTextWithoutSpace("Borson Khan"));
 
 	}
 
@@ -526,56 +528,64 @@ public class MethodPractice {
 
 		return consonent;
 	}
+
 	/*
-	 * Q30 = write a method that take one String input and return the count of all vowels;
-	 * input = String name;
-	 * return type = int;
-	 * serving bucket = variable;
+	 * Q30 = write a method that take one String input and return the count of all
+	 * vowels; input = String name; return type = int; serving bucket = variable;
 	 */
 	public static int getCountOfVowels(String name) {
-		int vowels = 0 ;
-		
+		int vowels = 0;
+
 		String vowel = "aeiou";
-		
+
 		name = name.toLowerCase();
-		
-		for (int i=0; i<name.length();i++) {
-			
+
+		for (int i = 0; i < name.length(); i++) {
+
 			String character = String.valueOf(name.charAt(i));
-			
+
 			if (vowel.contains(character)) {
-				
-				vowels = vowels+1;
+
+				vowels = vowels + 1;
 			}
 		}
-		
-		
+
 		return vowels;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+	/*
+	 * Q31 = write a method that take one string input and return the count of all
+	 * upper case character; input = String name; return type = int ; serving bucket
+	 * = variable;
+	 */
+	public static int getCountOfChar(String name) {
+		int countOfChar = 0;
+
+		for (int i = 0; i < name.length(); i++) {
+
+			if (Character.isUpperCase(name.charAt(i))) {
+				countOfChar = countOfChar + 1;
+			}
+		}
+
+		return countOfChar;
+	}
+
+	/*
+	 * Q32 = write a method that take one string and return count of character
+	 * without whispace; intput = String name; return type = int ; serving bucket =
+	 * variable;
+	 */
+	public static int getTextWithoutSpace(String name) {
+		int text = 0;
+
+		name = name.toLowerCase();
+
+		name.replaceAll(" ", "");
+
+		text = name.length();
+
+		return text;
+	}
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
