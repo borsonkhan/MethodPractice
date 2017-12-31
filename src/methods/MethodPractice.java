@@ -43,6 +43,8 @@ public class MethodPractice {
 		System.out.println("Q30 = " + getCountOfVowels("borsonkhana"));
 		System.out.println("Q31 = " + getCountOfChar("Borson Khan"));
 		System.out.println("Q32 = " + getTextWithoutSpace("Borson Khan"));
+		System.out.println("Q33 = " + getRepeatedText("Borson Khan"));
+		System.out.println("Q34 = " + getUniquetext("Borson Khan"));
 
 	}
 
@@ -587,5 +589,71 @@ public class MethodPractice {
 
 		return text;
 	}
+	
+	
+	/*
+	 * Q33 = write a method that take one string input and return all repeated characters without whitespace
+	 * input = string name;
+	 * return type = String;
+	 * serving bucket = variable;
+	 */
+	
+	public static String getRepeatedText(String name) {
+		String text = " ";
+		name = name.replaceAll(" ", "");
+		name.toLowerCase();
+		
+		for (int i = 0; i<name.length(); i=i+1) {
+			
+			for (int j = i + 1; j<name.length();j++ ) {
+				
+				if (name.charAt(i) == name.charAt(j)) {
+					
+					String character = String.valueOf(name.charAt(i));
+					
+					if (!text.contains(character)) {
+						
+						text = text+name.charAt(j);
+					}
+					break;
+				}
+			}
 
+		}
+		
+		return text;
+	}
+
+	/**
+	 * Q34 = Write a method that take one string input and return all the unique characters without whitespace
+	 * input = String name;
+	 * return type = String;
+	 * serving bucket = variable;
+	 */
+	public static String getUniquetext(String name) {
+		String uniqueText = " ";
+		name = name.replaceAll(" ", "");
+		name.toLowerCase();
+		
+		uniqueText = name;
+		
+		for(int i=0; i<name.length();i++) {
+			
+			for (int j=i+1; j<name.length();j++) {
+				
+					
+					String character = String.valueOf(name.charAt(i));
+					
+					
+					if (name.charAt(i) == name.charAt(j)) {
+						
+						uniqueText = uniqueText.replaceAll(character,"");
+				}
+			}
+		}
+		
+		
+		
+		return uniqueText;
+	}
 }
