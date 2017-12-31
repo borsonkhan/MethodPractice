@@ -46,10 +46,16 @@ public class MethodPractice {
 		System.out.println("Q33 = " + getRepeatedText("Borson Khan"));
 		System.out.println("Q34 = " + getUniquetext("Borson Khan"));
 
+		int[] number = { 3, 5, 6, 7 };
+		System.out.println("Q35 = " + getSumOfArray(number));
+
 	}
 
 	/*
-	 * Que 1 ; input = String name; return = String; serving bucket = variable;
+	 * Que 1 = write a method that take string input and return your name;
+	 * input = String name;
+	 * return = String; 
+	 * serving bucket = variable;
 	 */
 
 	public static String getText(String name) {
@@ -61,7 +67,10 @@ public class MethodPractice {
 	}
 
 	/*
-	 * Q2; input = String name; return = String ; serving bucket = variable;
+	 * Q2 = write  a method that take string input and return same as a upper case;
+	 * input = String name; 
+	 * return = String ; 
+	 * serving bucket = variable;
 	 */
 
 	public static String getSubject(String name) {
@@ -73,7 +82,10 @@ public class MethodPractice {
 	}
 
 	/**
-	 * Q3; input = String name; return type = String; serving bucket = variable;
+	 *   Q3= write  a method that take one string input and return same string as a lower case;
+	 *   input = String name;
+	 *   return type = String; 
+	 *   serving bucket = variable;
 	 */
 
 	public static String getUpperText(String name) {
@@ -85,8 +97,10 @@ public class MethodPractice {
 	}
 
 	/*
-	 * Q4; input = int number; return type = ArrayList<Integer>; serving bucket =
-	 * list;
+	 * Q4 = write a method that take one number input and return the list of all ecen number from o to that given number
+	 * input = int number; 
+	 * return type = ArrayList<Integer>; 
+	 * serving bucket = list;
 	 */
 	public static ArrayList<Integer> getEvenNumber(int number) {
 		ArrayList<Integer> evenNumber = new ArrayList<Integer>();
@@ -103,8 +117,10 @@ public class MethodPractice {
 	}
 
 	/*
-	 * Q5; input = int number; return type = ArrayList<Integer>; serving bucket =
-	 * list;
+	 * Q5= write a method a number input and return the list of all odd number from 0 to that given number;
+	 * input = int number; 
+	 * return type = ArrayList<Integer>; 
+	 * serving bucket =list;
 	 */
 	public static ArrayList<Integer> getOddNumber(int number) {
 		ArrayList<Integer> oddNumber = new ArrayList<Integer>();
@@ -121,7 +137,10 @@ public class MethodPractice {
 	}
 
 	/*
-	 * Q6; input = int number; return = int; serving = variable;
+	 * Q6 = write a method that take input as mile and return as a kilometer; 
+	 * input = int number; 
+	 * return = int;
+	 * serving = variable;
 	 */
 	public static int getKilometer(int number) {
 		int kilometer = 0;
@@ -131,8 +150,10 @@ public class MethodPractice {
 	}
 
 	/**
-	 * Q7; input = String input ; return type = ArrayList<Integer>; serving bucket =
-	 * list;
+	 * Q7 = write a method that take one string input and return a list of all index; 
+	 * input = String input ; 
+	 * return type = ArrayList<Integer>; 
+	 * serving bucket = list;
 	 */
 	public static ArrayList<Integer> getIndex(String name) {
 		ArrayList<Integer> index = new ArrayList<Integer>();
@@ -145,8 +166,10 @@ public class MethodPractice {
 	}
 
 	/*
-	 * Q8; input = String name; return type = ArrayList<Character>; serving bucket =
-	 * list;
+	 * Q8 = write a method that take one string and return list of all character; 
+	 * input = String name;
+	 * return type = ArrayList<Character>; 
+	 * serving bucket = list;
 	 */
 	public static ArrayList<Character> getcharList(String name) {
 		ArrayList<Character> charList = new ArrayList<Character>();
@@ -160,7 +183,10 @@ public class MethodPractice {
 	}
 
 	/*
-	 * Q9; input = int number; return type = int ; serving bucket = variable;
+	 * Q9 = write a method take one number input and return the sum of 1 to that given number; 
+	 * input = int number; 
+	 * return type = int ; 
+	 * serving bucket = variable;
 	 */
 	public static int getSum(int number) {
 		int sum = 0;
@@ -173,7 +199,10 @@ public class MethodPractice {
 	}
 
 	/*
-	 * Q10; input = int number; return type = int; serving bucket = variable;
+	 * Q10 = write a method that take one number and return square of the that number; 
+	 * input = int number; 
+	 * return type = int; 
+	 * serving bucket = variable;
 	 */
 	public static int getSquare(int number) {
 		int square = 0;
@@ -184,7 +213,10 @@ public class MethodPractice {
 	}
 
 	/*
-	 * Q11; input = int number; return type = int[] ; serving bucket = Array;
+	 * Q11 = write a method that take one number input and return an array that contain 0 to given number; 
+	 * input = int number; 
+	 * return type = int[] ; 
+	 * serving bucket = Array;
 	 */
 	public static int[] getEvenList(int number) {
 		int[] evenList = new int[number + 1];
@@ -199,7 +231,10 @@ public class MethodPractice {
 	}
 
 	/*
-	 * Q12; input = int number; return type = int []; serving bucket = Array;
+	 * Q12 = write a method take one number input and return an array that contain 1 to that given number; 
+	 * input = int number; 
+	 * return type = int []; 
+	 * serving bucket = Array;
 	 */
 	public static int[] getOddList(int number) {
 		int[] oddList = new int[number];
@@ -213,9 +248,10 @@ public class MethodPractice {
 	}
 
 	/*
-	 * Q13 = write a method that take one number input and return number list 0 to
-	 * given number; input = int number; return type = ArrayList<Integer>; serving
-	 * bucket = list;
+	 * Q13 = write a method that take one number input and return number list 0 to given number; 
+	 * input = int number; 
+	 * return type = ArrayList<Integer>; 
+	 * servingbucket = list;
 	 */
 	public static ArrayList<Integer> getTextList(int number) {
 		ArrayList<Integer> textList = new ArrayList<Integer>();
@@ -232,7 +268,9 @@ public class MethodPractice {
 	 * the given number divided by 5 and return "buzz" if the given number divided
 	 * by 5&&3 otherwise return "fizzbuzz";
 	 * 
-	 * input = int number; return type = String; serving bucket = variable;
+	 * input = int number; 
+	 * return type = String; 
+	 * serving bucket = variable;
 	 */
 
 	public static String getComments(int number) {
@@ -252,9 +290,10 @@ public class MethodPractice {
 	}
 
 	/*
-	 * Q15 = write a method that take one number array input and return the minimum
-	 * number ; input = int[] numberlist; return type = int; serving bucket =
-	 * variable;
+	 * Q15 = write a method that take one number array input and return the minimum number ; 
+	 * input = int[] numberlist;
+	 *  return type = int; 
+	 *  serving bucket = variable;
 	 */
 	public static int getMinimumNum(int[] numberlist) {
 		int minimumNum = numberlist[0];
@@ -271,8 +310,10 @@ public class MethodPractice {
 	}
 
 	/*
-	 * Q16 = write a method that take one number array and return the maximum
-	 * number; input = int[] numlist; return type = int; serving bucket = variable;
+	 * Q16 = write a method that take one number array and return the maximum number;
+	 *  input = int[] numlist;
+	 *   return type = int; 
+	 *   serving bucket = variable;
 	 */
 	public static int getMaximumNumber(int[] numlist) {
 		int maximumNumber = numlist[0];
@@ -289,8 +330,10 @@ public class MethodPractice {
 	}
 
 	/*
-	 * Q17 = write a method that take a number input and return the same value as
-	 * string; input = int number; return type = String; serving bucket = variable;
+	 * Q17 = write a method that take a number input and return the same value as string; 
+	 * input = int number;
+	 *  return type = String; 
+	 *  serving bucket = variable;
 	 */
 	public static String getValue(int number) {
 		String value = " ";
@@ -302,8 +345,9 @@ public class MethodPractice {
 	}
 
 	/*
-	 * Q18 = write a method that take a string representation of number input and
-	 * return the same value as a int; input = String name; return type = int ;
+	 * Q18 = write a method that take a string representation of number input and return the same value as a int;
+	 *  input = String name; 
+	 *  return type = int ;
 	 * serving bucket = variable;
 	 */
 	public static int getValueOfInt(String name) {
@@ -318,8 +362,10 @@ public class MethodPractice {
 
 	/*
 	 * Q19 = write a method take string input and return true if it contain char 'o'
-	 * otherwise false; input = String name; return type = boolean; serving bucket =
-	 * variable;
+	 * otherwise false; 
+	 * input = String name; 
+	 * return type = boolean; 
+	 * serving bucket = variable;
 	 */
 	public static boolean getCharacter(String name) {
 		boolean character = true;
@@ -331,7 +377,10 @@ public class MethodPractice {
 
 	/*
 	 * Q20 = write a method that take one string input and return the sum of all
-	 * index; input = String name; return type = int; serving bucket = variable;
+	 * index;
+	 *  input = String name; 
+	 *  return type = int; 
+	 *  serving bucket = variable;
 	 */
 	public static int getSumOfIndex(String name) {
 		int sum = 0;
@@ -346,8 +395,10 @@ public class MethodPractice {
 
 	/*
 	 * Q21 = write a method that take one string and return a list of last five
-	 * character; input = String name; return type = ArrayList<Character>; serving
-	 * bucket = list;
+	 * character;
+	 *  input = String name;
+	 *   return type = ArrayList<Character>; 
+	 *   serving bucket = list;
 	 */
 	public static ArrayList<Character> getLastFiveWord(String name) {
 		ArrayList<Character> lastFiveWord = new ArrayList<Character>();
@@ -362,8 +413,10 @@ public class MethodPractice {
 
 	/*
 	 * Q22 = write a method that take one string and return a list of first five
-	 * character; input = String name; return type = ArrayList<Character>; serving
-	 * bucket = list;
+	 * character; 
+	 * input = String name; 
+	 * return type = ArrayList<Character>;
+	 *  serving bucket = list;
 	 */
 	public static ArrayList<Character> getFirstFiveWord(String name) {
 
@@ -378,9 +431,10 @@ public class MethodPractice {
 	}
 
 	/*
-	 * Q23 = write a method that take a string input and return 5 to 10 character as
-	 * a string; input = String name; return type = String; serving bucket =
-	 * variable;
+	 * Q23 = write a method that take a string input and return 5 to 10 character as a string; 
+	 * input = String name;
+	 * return type = String; 
+	 * serving bucket =variable;
 	 */
 	public static String getFiveToTenChar(String name) {
 		String fiveToTenChar = " ";
@@ -391,8 +445,10 @@ public class MethodPractice {
 	}
 
 	/*
-	 * Q24 = write a method that take one String input and return all word; input =
-	 * String name; return type = ArrayList<string> ; serving bucket = list;
+	 * Q24 = write a method that take one String input and return all word; 
+	 * input =String name; 
+	 * return type = ArrayList<string> ; 
+	 * serving bucket = list;
 	 */
 	public static ArrayList<String> getAllWord(String name) {
 		ArrayList<String> allWord = new ArrayList<String>();
@@ -409,8 +465,10 @@ public class MethodPractice {
 	}
 
 	/*
-	 * Q25 = write a method take one string input and return first word; input = one
-	 * String name; return type = String; serving bucket = variable;
+	 * Q25 = write a method take one string input and return first word; 
+	 * input = oneString name;
+	 * return type = String; 
+	 * serving bucket = variable;
 	 */
 	public static String getFirstWord(String name) {
 		String firstWord = " ";
@@ -426,8 +484,10 @@ public class MethodPractice {
 	}
 
 	/*
-	 * Q25 = write a method take one string input and return first word; input = one
-	 * String name; return type = String; serving bucket = variable;
+	 * Q25 = write a method take one string input and return first word;
+	 *  input = oneString name;
+	 *  return type = String; 
+	 *  serving bucket = variable;
 	 */
 	public static String getFirsWord(String name) {
 		String firstWord = " ";
@@ -443,8 +503,9 @@ public class MethodPractice {
 	}
 
 	/*
-	 * Q26 = write a method take one string and one word input and return the count
-	 * of that gien word; input = String name , String word; return type = int ;
+	 * Q26 = write a method take one string and one word input and return the countof that gien word;
+	 * input = String name , 
+	 * String word; return type = int ;
 	 * serving bucket = variable;
 	 */
 	public static int getCount(String name, String word) {
@@ -463,9 +524,10 @@ public class MethodPractice {
 	}
 
 	/*
-	 * Q27 = write a method that take one string and one character input and return
-	 * the count of given character; input = String name , char num; return type =
-	 * int ; serving bucket = variable;
+	 * Q27 = write a method that take one string and one character input and return the count of given character; 
+	 * input = String name , 
+	 * char num; return type = int ;
+	 * serving bucket = variable;
 	 */
 	public static int getCountChar(String name, char num) {
 		int countChar = 0;
@@ -484,9 +546,11 @@ public class MethodPractice {
 	}
 
 	/*
-	 * Q28 = write a method one string and one word input and return ture if that
-	 * sentence contain given word otherwise false; input = string name, String
-	 * word; return type = boolean; serving bucket = variable;
+	 * Q28 = write a method one string and one word input and return ture if that sentence contain given word otherwise false; 
+	 * input = string name, 
+	 * String word; 
+	 * return type = boolean; 
+	 * serving bucket = variable;
 	 */
 	public static boolean getBoolean(String name, String word) {
 		boolean subject = false;
@@ -508,8 +572,10 @@ public class MethodPractice {
 	}
 
 	/*
-	 * Q29 = write a method that take one string and return the count of all
-	 * consonant; input = string name; return type = int; serving bucket = variable;
+	 * Q29 = write a method that take one string and return the count of all consonant;
+	 * input = string name; 
+	 * return type = int; 
+	 * serving bucket = variable;
 	 */
 	public static int getConsonent(String name) {
 		int consonent = 0;
@@ -532,8 +598,10 @@ public class MethodPractice {
 	}
 
 	/*
-	 * Q30 = write a method that take one String input and return the count of all
-	 * vowels; input = String name; return type = int; serving bucket = variable;
+	 * Q30 = write a method that take one String input and return the count of all vowels; 
+	 * input = String name; 
+	 * return type = int; 
+	 * serving bucket = variable;
 	 */
 	public static int getCountOfVowels(String name) {
 		int vowels = 0;
@@ -556,9 +624,10 @@ public class MethodPractice {
 	}
 
 	/*
-	 * Q31 = write a method that take one string input and return the count of all
-	 * upper case character; input = String name; return type = int ; serving bucket
-	 * = variable;
+	 * Q31 = write a method that take one string input and return the count of allupper case character; 
+	 * input = String name; 
+	 * return type = int ; 
+	 * serving bucket= variable;
 	 */
 	public static int getCountOfChar(String name) {
 		int countOfChar = 0;
@@ -574,9 +643,10 @@ public class MethodPractice {
 	}
 
 	/*
-	 * Q32 = write a method that take one string and return count of character
-	 * without whispace; intput = String name; return type = int ; serving bucket =
-	 * variable;
+	 * Q32 = write a method that take one string and return count of character without whispace; 
+	 * intput = String name; 
+	 * return type = int ; 
+	 * serving bucket = variable;
 	 */
 	public static int getTextWithoutSpace(String name) {
 		int text = 0;
@@ -589,44 +659,43 @@ public class MethodPractice {
 
 		return text;
 	}
-	
-	
+
 	/*
-	 * Q33 = write a method that take one string input and return all repeated characters without whitespace
-	 * input = string name;
+	 * Q33 = write a method that take one string input and return all repeatedcharacters without whitespace 
+	 * input = string name; 
 	 * return type = String;
 	 * serving bucket = variable;
 	 */
-	
+
 	public static String getRepeatedText(String name) {
 		String text = " ";
 		name = name.replaceAll(" ", "");
 		name.toLowerCase();
-		
-		for (int i = 0; i<name.length(); i=i+1) {
-			
-			for (int j = i + 1; j<name.length();j++ ) {
-				
+
+		for (int i = 0; i < name.length(); i = i + 1) {
+
+			for (int j = i + 1; j < name.length(); j++) {
+
 				if (name.charAt(i) == name.charAt(j)) {
-					
+
 					String character = String.valueOf(name.charAt(i));
-					
+
 					if (!text.contains(character)) {
-						
-						text = text+name.charAt(j);
+
+						text = text + name.charAt(j);
 					}
 					break;
 				}
 			}
 
 		}
-		
+
 		return text;
 	}
 
 	/**
 	 * Q34 = Write a method that take one string input and return all the unique characters without whitespace
-	 * input = String name;
+	 * input = String name; 
 	 * return type = String;
 	 * serving bucket = variable;
 	 */
@@ -634,26 +703,40 @@ public class MethodPractice {
 		String uniqueText = " ";
 		name = name.replaceAll(" ", "");
 		name.toLowerCase();
-		
+
 		uniqueText = name;
-		
-		for(int i=0; i<name.length();i++) {
-			
-			for (int j=i+1; j<name.length();j++) {
-				
-					
-					String character = String.valueOf(name.charAt(i));
-					
-					
-					if (name.charAt(i) == name.charAt(j)) {
-						
-						uniqueText = uniqueText.replaceAll(character,"");
+
+		for (int i = 0; i < name.length(); i++) {
+
+			for (int j = i + 1; j < name.length(); j++) {
+
+				String character = String.valueOf(name.charAt(i));
+
+				if (name.charAt(i) == name.charAt(j)) {
+
+					uniqueText = uniqueText.replaceAll(character, "");
 				}
 			}
 		}
-		
-		
-		
+
 		return uniqueText;
 	}
+
+	/*
+	 * Q35 = write a method that take one int array and return sum of all value;
+	 * input = int [] numberArray; 
+	 * return type = int; 
+	 * serving bucket = variable;
+	 */
+	public static int getSumOfArray(int[] number) {
+		int sum = 0;
+
+		for (int i = 0; i < number.length; i++) {
+
+			sum = sum + number[i];
+		}
+
+		return sum;
+	}
+
 }
