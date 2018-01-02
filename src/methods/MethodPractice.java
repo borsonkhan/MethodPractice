@@ -2,6 +2,8 @@ package methods;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
 
 import com.sun.xml.internal.bind.v2.runtime.unmarshaller.XsiNilLoader.Array;
 
@@ -72,6 +74,18 @@ public class MethodPractice {
 		
 		int[] numberThird = {2,4,60,6};
 		System.out.println("Q40 = " + Arrays.toString(getSortedArray(numberThird )));
+		
+        ArrayList<Integer> numberFour = new ArrayList<Integer>();
+		
+		
+		numberFour.add(5);
+		numberFour.add(6);
+		numberFour.add(10);
+
+		System.out.println("Q41 = " + getSortedList(numberFour));
+		
+		int[] numOne = {4 ,5 ,9,6,8,19};
+		System.out.println("Q42 = " + Arrays.toString(getBubbleText(numOne )));
 		
 
 	}
@@ -843,8 +857,47 @@ public class MethodPractice {
 		return text;
 	}
 	
+	/*
+	 * Q41 = write a method that take one number list input and return the sorted list;
+	 * input = ArrayList<Integer> numberFour;
+	 * return type = list;
+	 * serving bucket = list;
+	 */
+	public static ArrayList<Integer> getSortedList(ArrayList<Integer> numberFour){
+		
+		ArrayList<Integer> subject = new ArrayList<Integer>();
+		
+		Collections.sort(numberFour);
 	
+		subject = numberFour;
 	
+		return subject;
+	}
+	/*
+	 * Q42 = write a method that take a int [] input and return the bubble sorted array;
+	 * input = int[] numberArray;
+	 * return type = int[];
+	 * serving bucket = Array;
+	 */
+	public static int[] getBubbleText (int [] numOne) {
+		int[] text = new int[numOne.length];
+		
+		for (int i=0; i<numOne.length; i++) {
+			  
+			for (int j=i+1 ;j<numOne.length;j++) {
+				
+				if (numOne[i] < numOne[j]) {
+					
+					int value = numOne[i];
+					      numOne[i] = numOne[j];
+					          numOne[j] = value;
+				} } }
+		     text = numOne;
+		
+		return text;
+	}
+	
+ 	
 	
 	
 	
