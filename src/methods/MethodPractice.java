@@ -48,6 +48,16 @@ public class MethodPractice {
 
 		int[] number = { 3, 5, 6, 7 };
 		System.out.println("Q35 = " + getSumOfArray(number));
+		
+		ArrayList<Integer> mumlist = new ArrayList<Integer>();
+		
+		
+		mumlist.add(5);
+		mumlist.add(6);
+		mumlist.add(10);
+		System.out.println("Q36 = " + getSumOfList(mumlist));
+		
+		System.out.println("Q37 = " + getReverseText("borson"));
 
 	}
 
@@ -738,5 +748,60 @@ public class MethodPractice {
 
 		return sum;
 	}
+	
+	/*
+	 * Q36 = write a method that take one int list input and return sum of all value
+	 * input = Arraylist<Integer> mumlist
+	 * return = int;
+	 * serving bucket = variable;
+	 */
 
+	public static int getSumOfList(ArrayList<Integer> mumlist) {
+		int sum = 0;
+		
+		for (int i=0; i<mumlist.size();i++) {
+			
+			sum = sum + mumlist.get(i);		}
+		
+		return sum;
+	}
+	
+	/*
+	 * Q37 = write method that take one string input and retrun same string  in reverse order'
+	 * input = string name;
+	 * return type = String;
+	 * serving bucket = variable
+	 */
+	public static String getReverseText (String name) {
+		String text = " ";
+		
+		for (int i= name.length()-1 ; i>=0; i--) {
+			
+			text = text + name.charAt(i);
+		}
+		
+		return text;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
