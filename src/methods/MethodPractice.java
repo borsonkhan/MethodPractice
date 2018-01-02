@@ -3,6 +3,8 @@ package methods;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+import com.sun.xml.internal.bind.v2.runtime.unmarshaller.XsiNilLoader.Array;
+
 public class MethodPractice {
 
 	public static void main(String[] args) {
@@ -58,6 +60,19 @@ public class MethodPractice {
 		System.out.println("Q36 = " + getSumOfList(mumlist));
 		
 		System.out.println("Q37 = " + getReverseText("borson"));
+		
+		ArrayList<Integer> numbero = new ArrayList<Integer>();
+		numbero.add(5);
+		numbero.add(6);
+		numbero.add(10);
+		System.out.println("Q38 = " + Arrays.toString(getConvertText(numbero)));
+		
+		int[] numberTwo = {4 ,5 ,9,6};
+		System.out.println("Q39 = " + getConvertListText(numberTwo ));
+		
+		int[] numberThird = {2,4,60,6};
+		System.out.println("Q40 = " + Arrays.toString(getSortedArray(numberThird )));
+		
 
 	}
 
@@ -67,6 +82,7 @@ public class MethodPractice {
 	 * return = String; 
 	 * serving bucket = variable;
 	 */
+	
 
 	public static String getText(String name) {
 		String text = " ";
@@ -776,18 +792,56 @@ public class MethodPractice {
 		String text = " ";
 		
 		for (int i= name.length()-1 ; i>=0; i--) {
-			
 			text = text + name.charAt(i);
 		}
 		
 		return text;
 	}
 	
+	/*
+	 * Q38 = write a method take one int list input then convert that to an array and return that array;
+	 * input = ArrayList<Integer> number
+	 * return type = list
+	 * serving bucket = object list
+	 */
+	public static Object [] getConvertText(ArrayList<Integer> numbero) {
+		Object [] convertText = new Object [numbero.size()];
+		
+		convertText =  numbero.toArray();
+		return convertText;
+	}
 	
+	/*
+	 * Q39 = write a method that take a int array input then convert that to a list and return list;
+	 * input = int[]  numberTwo
+	 * return type = list;
+	 * serving bucket = list;
+	 */
 	
+	public static ArrayList<Integer> getConvertListText(int [ ] numberTwo){
+		ArrayList<Integer> text = new ArrayList<Integer>();
+		
+		for (int i=0 ; i<numberTwo.length; i++) {
+			
+			text.add(numberTwo[i]);
+		}
+		return text;
+	}
 	
-	
-	
+	/*
+	 * Q40 = write a method take one number array input and return the sorted array;
+	 * input = int[] numberThird;
+	 * return = int[];
+	 * serving bucket = array;
+	 */
+	public static int[] getSortedArray(int [] numberThird) {
+		int [] text = new int[numberThird.length]  ;
+		
+		Arrays.sort(numberThird);
+		
+		text = numberThird;
+		return text;
+	}
 	
 	
 	
