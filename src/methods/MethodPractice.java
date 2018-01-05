@@ -87,6 +87,12 @@ public class MethodPractice {
 		int[] numOne = {4 ,5 ,9,6,8,19};
 		System.out.println("Q42 = " + Arrays.toString(getBubbleText(numOne )));
 		
+		System.out.println("Q43 = " + getValueAsString("20"));
+		System.out.println("Q44 = " + getCountOfNumber("zarin 2017"));
+		System.out.println("Q45 = " + getEmail("khan kh@gmail.com"));
+		System.out.println("Q46 = " + getAlternativeText("Borsonkhan"));
+		System.out.println("Q47 = " + getUpperWord("ThisisaString"));
+		 
 
 	}
 
@@ -896,13 +902,105 @@ public class MethodPractice {
 		
 		return text;
 	}
+	/*
+	 * Q43 = write a method that take one string inout which contain (a) number and return that as a int;
+	 * input  = String name;
+	 * return type = int;
+	 * serving bucket = variable;
+	 */
 	
+	public static int getValueAsString(String name) {
+		int value = 0;
+		
+		Integer text = Integer.valueOf(name);
+		
+		value = text;
+		
+		return value;
+	}
+	
+	/*
+	 * Q44 = write a method that take one string input Which contain some numnbers then collect all of those numbers and rerurn in a list;
+	 * input = string name;
+	 * return type = ArrayList<Integer> ;
+	 * serving bucket = list;
+	 */
+	public static ArrayList<Integer> getCountOfNumber(String name){
+		ArrayList<Integer> count = new ArrayList<Integer>();
+		
+		String [] wordArray = name.split(" ");
+		
+		  for (int i=0; i<wordArray.length;i++) {
+			
+			if (wordArray[i].matches("[0-9]+")) {
+				
+				Integer number = Integer.valueOf(wordArray[i]);
+				
+				   count.add(number);
+			}
+		}
+		
+		
+		return count;
+	}
  	
+	/*
+	 * Q45 = write a method that take one string input which contain an email adress then collect and return that email;
+	 * input = String text;
+	 * returntype = email;
+	 * serving bucket = variable;
+	 */
+	public static String getEmail(String name) {
+		String subject = " ";
+		
+		String [] wordArray = name.split(" ");
+		
+		 for(int i=0; i<wordArray.length;i++) {
+			 
+		   if(wordArray[i].matches("[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+")) {
+			
+			 subject = wordArray[i];
+		}}
+		
+		return subject;
+	}
 	
-	
-	
-	
-	
+	/**
+	 * Q46 = write a method that take string input and return alternative character as a string ;
+	 * input = String name.
+	 * return type = String.
+	 * serving bucket = variable;
+	 */
+	public static String getAlternativeText(String name) {
+		String text = " ";
+		
+		name = name.toLowerCase();
+		
+		for(int i=0;i<name.length();i=i+2) {
+			
+			text = text + name.charAt(i);
+		}
+		
+		
+		return text;
+	}
+	/*
+	 * Q47 = write a method that take one string input and return the same String by making upperCase of all alternative character and rest of the character lower case;
+	 * input = String name;
+	 * return type = String ;
+	 * serving bucket = variable;
+	 */
+	public static String getUpperWord(String name) {
+		String text = " ";
+		for(int i=0 ; i<name.length();i=i+2) {
+			text = text+name.charAt(i);
+			
+			text=text.toUpperCase();
+			
+		}
+		
+		return text;
+	}
 	
 	
 	
